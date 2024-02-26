@@ -1,0 +1,163 @@
+Задание 1
+
+aleks@aleks-VirtualBox:~$ mkdir controlwork
+aleks@aleks-VirtualBox:~$ cd controlwork
+aleks@aleks-VirtualBox:~/controlwork$ cat > HomeAnimals
+cat 
+dog
+hamster
+aleks@aleks-VirtualBox:~/controlwork$ cat > PackAnimals
+donkey
+camel
+horse
+aleks@aleks-VirtualBox:~/controlwork$  cat HomeAnimals PackAnimals > Animals
+aleks@aleks-VirtualBox:~/controlwork$ cat Animals
+cat
+dog
+hamster
+donkey
+camel
+horse
+aleks@aleks-VirtualBox:~/controlwork$ mv Animals HumanFriends
+aleks@aleks-VirtualBox:~/controlwork$ ll
+итого 20
+drwxrwxr-x  2 aleks aleks 4096 фев 16 19:16 ./
+drwxr-x--- 20 aleks aleks 4096 фев 16 19:07 ../
+-rw-rw-r--  1 aleks aleks   16 фев 16 19:10 HomeAnimals
+-rw-rw-r--  1 aleks aleks   35 фев 16 19:14 HumanFriends
+-rw-rw-r--  1 aleks aleks   19 фев 16 19:12 PackAnimals
+aleks@aleks-VirtualBox:~/controlwork$ cat H
+HomeAnimals   HumanFriends  
+aleks@aleks-VirtualBox:~/controlwork$ cat HumanFriends 
+cat
+dog
+hamster
+donkey
+camel
+horse
+aleks@aleks-VirtualBox:~/controlwork$ 
+
+Задание 2
+
+aleks@aleks-VirtualBox:~/controlwork$ mkdir work2
+aleks@aleks-VirtualBox:~/controlwork$ mv HumanFriends work2
+
+Задание 3 
+aleks@aleks-VirtualBox:~/controlwork$ sudo apt update
+Сущ:1 http://ru.archive.ubuntu.com/ubuntu jammy InRelease
+Пол:2 http://ru.archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]     
+Пол:3 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]      
+Пол:4 http://ru.archive.ubuntu.com/ubuntu jammy-backports InRelease [109 kB]   
+Пол:5 https://download.docker.com/linux/ubuntu jammy InRelease [48,8 kB]       
+Пол:6 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [1 377 kB]
+Пол:7 https://download.docker.com/linux/ubuntu jammy/stable amd64 Packages [26,7 kB]
+Пол:8 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main i386 Packages [570 kB]
+Пол:9 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [273 kB]
+Пол:10 http://ru.archive.ubuntu.com/ubuntu jammy-updates/restricted i386 Packages [34,8 kB]
+Пол:11 http://ru.archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [1 431 kB]
+Пол:12 http://ru.archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [235 kB]
+Пол:13 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe i386 Packages [689 kB]
+Пол:14 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1 049 kB]
+Пол:15 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [237 kB]
+Пол:16 http://ru.archive.ubuntu.com/ubuntu jammy-updates/multiverse i386 Packages [4 184 B]
+Пол:17 http://ru.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [42,1 kB]
+Пол:18 http://ru.archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [41,7 kB]
+Пол:19 http://security.ubuntu.com/ubuntu jammy-security/main i386 Packages [404 kB]
+Пол:20 http://ru.archive.ubuntu.com/ubuntu jammy-backports/main i386 Packages [33,9 kB]
+Пол:21 http://ru.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [24,3 kB]
+Пол:22 http://ru.archive.ubuntu.com/ubuntu jammy-backports/universe i386 Packages [13,4 kB]
+Пол:23 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [1 161 kB]
+Пол:24 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [213 kB]
+Пол:25 http://security.ubuntu.com/ubuntu jammy-security/restricted i386 Packages [33,2 kB]
+Пол:26 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [1 401 kB]
+Пол:27 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [231 kB]
+Пол:28 http://security.ubuntu.com/ubuntu jammy-security/universe i386 Packages [592 kB]
+Пол:29 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [842 kB]
+Пол:30 http://security.ubuntu.com/ubuntu jammy-security/universe Translation-en [161 kB]
+Пол:31 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [37,1 kB]
+Получено 11,5 MB за 5с (2 347 kB/s)                          
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово         
+Может быть обновлено 120 пакетов. Запустите «apt list --upgradable» для их показа.
+aleks@aleks-VirtualBox:~/controlwork$ sudo apt install
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово         
+Следующие пакеты устанавливались автоматически и больше не требуются:
+  bridge-utils python3-attr python3-docker python3-dockerpty python3-docopt
+  python3-dotenv python3-jsonschema python3-pyrsistent python3-texttable
+  python3-websocket ubuntu-fan
+Для их удаления используйте «sudo apt autoremove».
+Обновлено 0 пакетов, установлено 0 новых пакетов, для удаления отмечено 0 пакетов, и 120 пакетов не обновлено.
+aleks@aleks-VirtualBox:~/controlwork$ sudo apt install mysql-server
+Чтение списков пакетов… Готово
+Построение дерева зависимостей… Готово
+Чтение информации о состоянии… Готово         
+Следующие пакеты устанавливались автоматически и больше не требуются:
+  bridge-utils python3-attr python3-docker python3-dockerpty python3-docopt
+  python3-dotenv python3-jsonschema python3-pyrsistent python3-texttable
+  python3-websocket ubuntu-fan
+Для их удаления используйте «sudo apt autoremove».
+Следующие пакеты будут обновлены:
+  mysql-server
+Обновлено 1 пакетов, установлено 0 новых пакетов, для удаления отмечено 0 пакетов, и 119 пакетов не обновлено.
+Необходимо скачать 9 460 B архивов.
+После данной операции объём занятого дискового пространства возрастёт на 0 B.
+Пол:1 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 mysql-server all 8.0.36-0ubuntu0.22.04.1 [9 460 B]
+Получено 9 460 B за 0с (26,2 kB/s)          
+(Чтение базы данных … на данный момент установлен 185781 файл и каталог.)
+Подготовка к распаковке …/mysql-server_8.0.36-0ubuntu0.22.04.1_all.deb …
+Распаковывается mysql-server (8.0.36-0ubuntu0.22.04.1) на замену (8.0.35-0ubuntu
+0.22.04.1) …
+Настраивается пакет mysql-server (8.0.36-0ubuntu0.22.04.1) …
+aleks@aleks-VirtualBox:~/controlwork$ systemctl status mysql
+● mysql.service - MySQL Community Server
+     Loaded: loaded (/lib/systemd/system/mysql.service; enabled; vendor preset:>
+     Active: active (running) since Fri 2024-02-16 19:10:13 +05; 13min ago
+   Main PID: 891 (mysqld)
+     Status: "Server is operational"
+      Tasks: 37 (limit: 4599)
+     Memory: 424.8M
+        CPU: 6.717s
+     CGroup: /system.slice/mysql.service
+             └─891 /usr/sbin/mysqld
+
+фев 16 19:10:07 aleks-VirtualBox systemd[1]: Starting MySQL Community Server...
+фев 16 19:10:13 aleks-VirtualBox systemd[1]: Started MySQL Community Server.
+
+aleks@aleks-VirtualBox:~/controlwork$ 
+
+Задание 4 
+wget  "https://discordapp.com/api/download?platform=linux&format=deb" -O discord.deb
+sudo dpkg -i discord.deb 
+sudo dpkg -r discord
+
+Задание 5 
+  693  mkdir controlwork
+  694  cd controlwork
+  695  cat > HomeAnimals
+  696  cat > PackAnimals
+  697  cat Animals
+  698  mv Animals HumanFriends
+  699  ll
+  700  cat HumanFriends 
+  701  mkdir work2
+  702  mv HumanFriends work2
+  703  sudo apt update
+  704  sudo apt install
+  705  sudo apt install mysql-server
+  706  systemctl status mysql
+  707  wget -O calc.deb "http://ftp.de.debian.org/debian/pool/main/c/calc/calc_2.12.7.2-4_amd64.deb"
+  708  sudo dpkg -i calc.deb 
+  709  wget "https://discord.com/api/download?platform=linux&format=deb" -O discord.deb
+  710  sudo apt install ./discord.deb
+  711  apt --fix-broken install
+  712  sudo apt --fix-broken install
+  713  sudo apt install ./discord.deb
+  714  sudo dpkg -r discord
+  715  sudo dpkg -i discord.deb 
+  716  sudo dpkg -r discord
+  717  history
+
+
